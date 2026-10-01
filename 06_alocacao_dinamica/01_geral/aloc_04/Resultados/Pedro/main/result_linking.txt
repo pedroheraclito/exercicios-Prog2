@@ -1,0 +1,13 @@
+/usr/bin/ld: Resultados/Pedro/main/utils_char.o: in function `CriaVetorTamPadrao':
+utils_char.c:(.text+0x0): multiple definition of `CriaVetorTamPadrao'; Resultados/Pedro/main/utils_char2.o:utils_char2.c:(.text+0x0): first defined here
+/usr/bin/ld: Resultados/Pedro/main/utils_char.o: in function `AumentaTamanhoVetor':
+utils_char.c:(.text+0x48): multiple definition of `AumentaTamanhoVetor'; Resultados/Pedro/main/utils_char2.o:utils_char2.c:(.text+0x6f): first defined here
+/usr/bin/ld: Resultados/Pedro/main/utils_char.o: in function `LeVetor':
+utils_char.c:(.text+0xbf): multiple definition of `LeVetor'; Resultados/Pedro/main/utils_char2.o:utils_char2.c:(.text+0x10b): first defined here
+/usr/bin/ld: Resultados/Pedro/main/utils_char.o: in function `ImprimeString':
+utils_char.c:(.text+0x167): multiple definition of `ImprimeString'; Resultados/Pedro/main/utils_char2.o:utils_char2.c:(.text+0x18c): first defined here
+/usr/bin/ld: Resultados/Pedro/main/utils_char.o: in function `LiberaVetor':
+utils_char.c:(.text+0x186): multiple definition of `LiberaVetor'; Resultados/Pedro/main/utils_char2.o:utils_char2.c:(.text+0x1a7): first defined here
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status

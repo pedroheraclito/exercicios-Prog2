@@ -1,0 +1,49 @@
+==51046== Memcheck, a memory error detector
+==51046== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==51046== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==51046== Command: Resultados/Pedro/utils_char2/prog Resultados/Pedro/utils_char2/Casos/2
+==51046== Parent PID: 51045
+==51046== 
+==51046== Invalid write of size 1
+==51046==    at 0x48E9719: __vfscanf_internal (vfscanf-internal.c:2976)
+==51046==    by 0x48D9EC5: __isoc99_scanf (isoc99_scanf.c:30)
+==51046==    by 0x1092FD: LeVetor (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046==    by 0x1091D7: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046==  Address 0x4a8f04a is 0 bytes after a block of size 10 alloc'd
+==51046==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==51046==    by 0x109229: CriaVetorTamPadrao (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046==    by 0x1091C0: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046== 
+==51046== Invalid write of size 1
+==51046==    at 0x48E9795: __vfscanf_internal (vfscanf-internal.c:3063)
+==51046==    by 0x48D9EC5: __isoc99_scanf (isoc99_scanf.c:30)
+==51046==    by 0x1092FD: LeVetor (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046==    by 0x1091D7: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046==  Address 0x4a8f04c is 2 bytes after a block of size 10 alloc'd
+==51046==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==51046==    by 0x109229: CriaVetorTamPadrao (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046==    by 0x1091C0: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046== 
+==51046== Invalid read of size 1
+==51046==    at 0x484F234: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==51046==    by 0x109309: LeVetor (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046==    by 0x1091D7: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046==  Address 0x4a8f04a is 0 bytes after a block of size 10 alloc'd
+==51046==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==51046==    by 0x109229: CriaVetorTamPadrao (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046==    by 0x1091C0: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046== 
+==51046== Use of uninitialised value of size 8
+==51046==    at 0x109369: LeVetor (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046==    by 0x1091D7: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51046== 
+==51046== 
+==51046== HEAP SUMMARY:
+==51046==     in use at exit: 0 bytes in 0 blocks
+==51046==   total heap usage: 3 allocs, 3 frees, 8,202 bytes allocated
+==51046== 
+==51046== All heap blocks were freed -- no leaks are possible
+==51046== 
+==51046== Use --track-origins=yes to see where uninitialised values come from
+==51046== For lists of detected and suppressed errors, rerun with: -s
+==51046== ERROR SUMMARY: 7 errors from 4 contexts (suppressed: 0 from 0)

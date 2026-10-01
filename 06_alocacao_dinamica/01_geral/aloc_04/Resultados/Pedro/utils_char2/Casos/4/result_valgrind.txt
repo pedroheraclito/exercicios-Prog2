@@ -1,0 +1,39 @@
+==51486== Memcheck, a memory error detector
+==51486== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==51486== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==51486== Command: Resultados/Pedro/utils_char2/prog Resultados/Pedro/utils_char2/Casos/4
+==51486== Parent PID: 51485
+==51486== 
+==51486== Invalid write of size 1
+==51486==    at 0x48E9719: __vfscanf_internal (vfscanf-internal.c:2976)
+==51486==    by 0x48D9EC5: __isoc99_scanf (isoc99_scanf.c:30)
+==51486==    by 0x1092FD: LeVetor (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51486==    by 0x1091D7: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51486==  Address 0x4a8f04a is 0 bytes after a block of size 10 alloc'd
+==51486==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==51486==    by 0x109229: CriaVetorTamPadrao (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51486==    by 0x1091C0: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51486== 
+==51486== Invalid read of size 1
+==51486==    at 0x484F234: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==51486==    by 0x109309: LeVetor (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51486==    by 0x1091D7: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51486==  Address 0x4a8f04a is 0 bytes after a block of size 10 alloc'd
+==51486==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==51486==    by 0x109229: CriaVetorTamPadrao (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51486==    by 0x1091C0: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51486== 
+==51486== Use of uninitialised value of size 8
+==51486==    at 0x109369: LeVetor (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51486==    by 0x1091D7: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/01_geral/aloc_04/Resultados/Pedro/utils_char2/prog)
+==51486== 
+==51486== 
+==51486== HEAP SUMMARY:
+==51486==     in use at exit: 0 bytes in 0 blocks
+==51486==   total heap usage: 3 allocs, 3 frees, 8,202 bytes allocated
+==51486== 
+==51486== All heap blocks were freed -- no leaks are possible
+==51486== 
+==51486== Use --track-origins=yes to see where uninitialised values come from
+==51486== For lists of detected and suppressed errors, rerun with: -s
+==51486== ERROR SUMMARY: 141 errors from 3 contexts (suppressed: 0 from 0)
