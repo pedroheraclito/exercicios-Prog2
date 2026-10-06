@@ -23,10 +23,10 @@ CHECKANDO OS ARQUIVOS DO ALUNO:
  - Arquivo esperado 'Respostas/Pedro/jogador.h' encontrado!
  - Arquivo esperado 'Respostas/Pedro/jogo.c' encontrado!
  - Arquivo esperado 'Respostas/Pedro/jogo.h' encontrado!
- - Arquivo esperado 'Respostas/Pedro/main.c' não encontrado!
+ - Arquivo esperado 'Respostas/Pedro/main.c' encontrado!
  - Arquivo esperado 'Respostas/Pedro/tabuleiro.c' encontrado!
  - Arquivo esperado 'Respostas/Pedro/tabuleiro.h' encontrado!
- - Arquivos esperados enviados: Faltando!
+ - Arquivos esperados enviados: Ok!
 
 COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Pasta main:
@@ -74,7 +74,8 @@ COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Arquivos copiados: ok!
 
 COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
- - Erro de compilação! Verifique os arquivos da pasta main.
+ - Compilação dos arquivos do aluno na pasta main ok!
+ - Arquivo de output gerado: Resultados/Pedro/main/result_compilation.txt
  - Compilação dos arquivos do aluno na pasta completo ok!
  - Arquivo de output gerado: Resultados/Pedro/completo/result_compilation.txt
  - Compilação dos arquivos do aluno na pasta jogada ok!
@@ -85,18 +86,16 @@ COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
  - Arquivo de output gerado: Resultados/Pedro/tabuleiro/result_compilation.txt
  - Compilação dos arquivos do aluno na pasta jogo ok!
  - Arquivo de output gerado: Resultados/Pedro/jogo/result_compilation.txt
- - Arquivos Compilados: Erro!: 1 arquivos com erros de compilacao.
-
  - Arquivos Compilados: ok!
 
 LINKANDO OS ARQUIVOS COMPILADOS:
  - Pasta main:
  - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
- - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/Pedro/main/result_linking.txt
  - Pasta completo:
  - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
- - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/Pedro/completo/result_linking.txt
  - Pasta jogada:
  - Gerando o binário prog linkando com o(s) arquivo(s) jogada/*.o
@@ -112,62 +111,73 @@ LINKANDO OS ARQUIVOS COMPILADOS:
  - Arquivo de output gerado: Resultados/Pedro/tabuleiro/result_linking.txt
  - Pasta jogo:
  - Gerando o binário prog linkando com o(s) arquivo(s) jogo/*.o
- - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
  - Arquivo de output gerado: Resultados/Pedro/jogo/result_linking.txt
- - Arquivos Linkados: Erro! 3 arquivos com erros de linkagem.
 
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta main / Caso 1:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/main/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 79, frees: 79, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 2:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/main/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 68, frees: 68, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 3:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/main/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 47, frees: 47, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 4:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/main/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 49, frees: 49, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 5:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/main/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 79, frees: 79, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta main / Caso 6:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
- - Nota para a pasta main (máximo 1.66) - 0 de 60 - 0% de 1.66: 0.
+ - Arquivo de output gerado: Resultados/Pedro/main/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 132, frees: 132, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta main (máximo 1.66) - 60.00 de 60 - 100.00% de 1.66: 1.66.
  -----
  - Pasta completo / Caso 1:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/completo/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 119, frees: 119, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 2:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/completo/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 100, frees: 100, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 3:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/completo/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 71, frees: 71, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 4:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/completo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 73, frees: 73, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 5:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/completo/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 119, frees: 119, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta completo / Caso 6:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
- - Nota para a pasta completo (máximo 1.66) - 0 de 60 - 0% de 1.66: 0.
+ - Arquivo de output gerado: Resultados/Pedro/completo/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 212, frees: 212, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta completo (máximo 1.66) - 60.00 de 60 - 100.00% de 1.66: 1.66.
  -----
  - Pasta jogada / Caso 1:
  - Arquivo de output gerado: Resultados/Pedro/jogada/Casos/1/result_valgrind.txt.
@@ -266,30 +276,36 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para a pasta tabuleiro (máximo 1.67) - 60.00 de 60 - 100.00% de 1.67: 1.67.
  -----
  - Pasta jogo / Caso 1:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/jogo/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 119, frees: 119, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta jogo / Caso 2:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/jogo/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 100, frees: 100, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta jogo / Caso 3:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/jogo/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 71, frees: 71, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta jogo / Caso 4:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/jogo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 73, frees: 73, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta jogo / Caso 5:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Arquivo de output gerado: Resultados/Pedro/jogo/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 119, frees: 119, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Pasta jogo / Caso 6:
- - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
- - Resultado para o saida.txt: Incorreto! Peso: 0.0
- - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
- - Nota para a pasta jogo (máximo 1.67) - 0 de 60 - 0% de 1.67: 0.
+ - Arquivo de output gerado: Resultados/Pedro/jogo/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 212, frees: 212, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta jogo (máximo 1.67) - 60.00 de 60 - 100.00% de 1.67: 1.67.
  -----
 
 #######################################
@@ -298,17 +314,17 @@ RESULTADOS FINAIS
 
 ----------------------------------------------------------------------------
 Aluno: Pedro
- - Arquivos Esperados Corretos: 8 de 9
- - Pastas Compiladas Corretamente: 5 de 6 
- - Pastas Linkadas Corretamente: 3 de 6
+ - Arquivos Esperados Corretos: 9 de 9
+ - Pastas Compiladas Corretamente: 6 de 6 
+ - Pastas Linkadas Corretamente: 6 de 6
  - Teste main
- - Resultados corretos: 0 de 6
- - Valgrinds corretos: 0 de 6
- - Nota de Pedro para o teste main: 0
+ - Resultados corretos: 6 de 6
+ - Valgrinds corretos: 6 de 6
+ - Nota de Pedro para o teste main: 1.66
  - Teste completo
- - Resultados corretos: 0 de 6
- - Valgrinds corretos: 0 de 6
- - Nota de Pedro para o teste completo: 0
+ - Resultados corretos: 6 de 6
+ - Valgrinds corretos: 6 de 6
+ - Nota de Pedro para o teste completo: 1.66
  - Teste jogada
  - Resultados corretos: 6 de 6
  - Valgrinds corretos: 6 de 6
@@ -322,11 +338,11 @@ Aluno: Pedro
  - Valgrinds corretos: 6 de 6
  - Nota de Pedro para o teste tabuleiro: 1.67
  - Teste jogo
- - Resultados corretos: 0 de 6
- - Valgrinds corretos: 0 de 6
- - Nota de Pedro para o teste jogo: 0
- - Nota de Pedro: 0+(0)+(1.67)+(1.67)+(1.67)+(0)+(0)
- - Nota de Pedro: 5.01
+ - Resultados corretos: 6 de 6
+ - Valgrinds corretos: 6 de 6
+ - Nota de Pedro para o teste jogo: 1.67
+ - Nota de Pedro: 0+(1.67)+(1.67)+(1.67)+(1.67)+(1.66)+(1.66)
+ - Nota de Pedro: 10.00
 
 ----------------------------------------------------------------------------
 
