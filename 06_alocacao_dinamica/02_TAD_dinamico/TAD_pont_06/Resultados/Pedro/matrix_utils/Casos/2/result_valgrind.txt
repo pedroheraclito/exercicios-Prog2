@@ -1,0 +1,15 @@
+==40123== Memcheck, a memory error detector
+==40123== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==40123== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==40123== Command: Resultados/Pedro/matrix_utils/prog Resultados/Pedro/matrix_utils/Casos/2
+==40123== Parent PID: 40122
+==40123== 
+==40123== 
+==40123== HEAP SUMMARY:
+==40123==     in use at exit: 0 bytes in 0 blocks
+==40123==   total heap usage: 32 allocs, 32 frees, 8,584 bytes allocated
+==40123== 
+==40123== All heap blocks were freed -- no leaks are possible
+==40123== 
+==40123== For lists of detected and suppressed errors, rerun with: -s
+==40123== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
