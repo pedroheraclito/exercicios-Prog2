@@ -1,0 +1,7 @@
+paciente.c: In function ‘lerPaciente’:
+paciente.c:44:9: warning: unused variable ‘numLesoes’ [-Wunused-variable]
+   44 |     int numLesoes;
+      |         ^~~~~~~~~
+paciente.c:43:12: warning: unused variable ‘lesoes’ [-Wunused-variable]
+   43 |     Lesao *lesoes[MAX_LESOES];
+      |            ^~~~~~

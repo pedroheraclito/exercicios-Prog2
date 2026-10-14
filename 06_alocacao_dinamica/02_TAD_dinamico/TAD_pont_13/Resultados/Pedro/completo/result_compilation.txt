@@ -1,0 +1,11 @@
+main.c: In function ‘main’:
+main.c:62:15: warning: too many arguments for format [-Wformat-extra-args]
+   62 |        printf("MEDIA IDADE (ANOS): -\n", mediaidades);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~
+paciente.c: In function ‘lerPaciente’:
+paciente.c:44:9: warning: unused variable ‘numLesoes’ [-Wunused-variable]
+   44 |     int numLesoes;
+      |         ^~~~~~~~~
+paciente.c:43:12: warning: unused variable ‘lesoes’ [-Wunused-variable]
+   43 |     Lesao *lesoes[MAX_LESOES];
+      |            ^~~~~~
