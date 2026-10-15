@@ -1,0 +1,25 @@
+==108441== Memcheck, a memory error detector
+==108441== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==108441== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==108441== Command: Resultados/Pedro/completo/prog Resultados/Pedro/completo/Casos/6
+==108441== Parent PID: 108440
+==108441== 
+==108441== 
+==108441== HEAP SUMMARY:
+==108441==     in use at exit: 12 bytes in 1 blocks
+==108441==   total heap usage: 3 allocs, 2 frees, 8,204 bytes allocated
+==108441== 
+==108441== 12 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==108441==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==108441==    by 0x1091E3: CriaData (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_07/Resultados/Pedro/completo/prog)
+==108441==    by 0x109935: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_07/Resultados/Pedro/completo/prog)
+==108441== 
+==108441== LEAK SUMMARY:
+==108441==    definitely lost: 12 bytes in 1 blocks
+==108441==    indirectly lost: 0 bytes in 0 blocks
+==108441==      possibly lost: 0 bytes in 0 blocks
+==108441==    still reachable: 0 bytes in 0 blocks
+==108441==         suppressed: 0 bytes in 0 blocks
+==108441== 
+==108441== For lists of detected and suppressed errors, rerun with: -s
+==108441== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
