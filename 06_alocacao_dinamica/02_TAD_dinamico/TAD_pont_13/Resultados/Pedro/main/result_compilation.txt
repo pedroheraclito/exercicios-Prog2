@@ -1,0 +1,4 @@
+main.c: In function ‘main’:
+main.c:62:15: warning: too many arguments for format [-Wformat-extra-args]
+   62 |        printf("MEDIA IDADE (ANOS): -\n", mediaidades);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~
