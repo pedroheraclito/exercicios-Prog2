@@ -1,25 +1,15 @@
-==107991== Memcheck, a memory error detector
-==107991== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==107991== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==107991== Command: Resultados/Pedro/completo/prog Resultados/Pedro/completo/Casos/3
-==107991== Parent PID: 107990
-==107991== 
-==107991== 
-==107991== HEAP SUMMARY:
-==107991==     in use at exit: 12 bytes in 1 blocks
-==107991==   total heap usage: 3 allocs, 2 frees, 8,204 bytes allocated
-==107991== 
-==107991== 12 bytes in 1 blocks are definitely lost in loss record 1 of 1
-==107991==    at 0x484D953: calloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==107991==    by 0x1091E3: CriaData (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_07/Resultados/Pedro/completo/prog)
-==107991==    by 0x109935: main (in /home/phkapereira/Downloads/exercicios-Prog2-main/06_alocacao_dinamica/02_TAD_dinamico/TAD_pont_07/Resultados/Pedro/completo/prog)
-==107991== 
-==107991== LEAK SUMMARY:
-==107991==    definitely lost: 12 bytes in 1 blocks
-==107991==    indirectly lost: 0 bytes in 0 blocks
-==107991==      possibly lost: 0 bytes in 0 blocks
-==107991==    still reachable: 0 bytes in 0 blocks
-==107991==         suppressed: 0 bytes in 0 blocks
-==107991== 
-==107991== For lists of detected and suppressed errors, rerun with: -s
-==107991== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==43835== Memcheck, a memory error detector
+==43835== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==43835== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==43835== Command: Resultados/Pedro/completo/prog Resultados/Pedro/completo/Casos/3
+==43835== Parent PID: 43834
+==43835== 
+==43835== 
+==43835== HEAP SUMMARY:
+==43835==     in use at exit: 0 bytes in 0 blocks
+==43835==   total heap usage: 7 allocs, 7 frees, 8,252 bytes allocated
+==43835== 
+==43835== All heap blocks were freed -- no leaks are possible
+==43835== 
+==43835== For lists of detected and suppressed errors, rerun with: -s
+==43835== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

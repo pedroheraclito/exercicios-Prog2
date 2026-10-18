@@ -2,7 +2,7 @@
 	"alunos": [
 		{
 			"Nome":"Pedro",
-			"Nota":.53
+			"Nota":10.00
 		}
 	]
 }

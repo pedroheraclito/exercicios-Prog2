@@ -159,9 +159,9 @@ void ImprimeMesExtenso(tData *data)
  */
 void ImprimeDataExtenso(tData *data)
 {
-    printf("28 de ");
+    printf("%.2d de ", data->dia);
     ImprimeMesExtenso(data);
-    printf(" de 2002\n");
+    printf(" de %d\n", data->ano);
 }
 
 /**
@@ -284,18 +284,49 @@ int CalculaDiasAteMes(tData *data)
  */
 int CalculaDiferencaDias(tData *data1, tData *data2)
 {
+    tData *aux = CriaData();
     int diferenca;
     if (ComparaData(data1, data2) == 1)
     {
         diferenca = CalculaDiasAteMes(data1) + data1->dia - CalculaDiasAteMes(data2) - data2->dia;
+        for (int i = 0; i < data1->ano - data2->ano; i++)
+        {
+            int ano = data2->ano + i;
+            aux->ano = ano;
+
+            if (VerificaBissexto(aux))
+            {
+                diferenca += 366;
+            }
+            else
+            {
+                diferenca += 365;
+            }
+        }
     }
     else if (ComparaData(data1, data2) == -1)
     {
         diferenca = CalculaDiasAteMes(data2) + data2->dia - CalculaDiasAteMes(data1) - data1->dia;
+        for (int i = 0; i < data2->ano - data1->ano; i++)
+        {
+            int ano = data1->ano + i;
+            aux->ano = ano;
+
+            if (VerificaBissexto(aux))
+            {
+                diferenca += 366;
+            }
+            else
+            {
+                diferenca += 365;
+            }
+        }
     }
     else
     {
+        LiberaData(aux);
         return 0;
     }
+    LiberaData(aux);
     return diferenca;
 }
