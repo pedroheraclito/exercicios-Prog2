@@ -1,0 +1,15 @@
+==33305== Memcheck, a memory error detector
+==33305== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==33305== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==33305== Command: Resultados/Pedro/jogo/prog Resultados/Pedro/jogo/Casos/4
+==33305== Parent PID: 33304
+==33305== 
+==33305== 
+==33305== HEAP SUMMARY:
+==33305==     in use at exit: 0 bytes in 0 blocks
+==33305==   total heap usage: 73 allocs, 73 frees, 8,954 bytes allocated
+==33305== 
+==33305== All heap blocks were freed -- no leaks are possible
+==33305== 
+==33305== For lists of detected and suppressed errors, rerun with: -s
+==33305== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,4 @@
+jogador.c: In function ‘JogaJogador’:
+jogador.c:45:9: warning: unused variable ‘cont’ [-Wunused-variable]
+   45 |     int cont = 0;
+      |         ^~~~
