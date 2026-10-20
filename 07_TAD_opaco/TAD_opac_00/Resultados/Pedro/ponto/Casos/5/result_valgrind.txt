@@ -1,0 +1,15 @@
+==71717== Memcheck, a memory error detector
+==71717== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==71717== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==71717== Command: Resultados/Pedro/ponto/prog Resultados/Pedro/ponto/Casos/5
+==71717== Parent PID: 71716
+==71717== 
+==71717== 
+==71717== HEAP SUMMARY:
+==71717==     in use at exit: 0 bytes in 0 blocks
+==71717==   total heap usage: 6 allocs, 6 frees, 8,232 bytes allocated
+==71717== 
+==71717== All heap blocks were freed -- no leaks are possible
+==71717== 
+==71717== For lists of detected and suppressed errors, rerun with: -s
+==71717== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
