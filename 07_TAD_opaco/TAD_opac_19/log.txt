@@ -1,0 +1,261 @@
+- Arquivo de configuração encontrado!
+ - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+
+#######################################
+ALUNO: Pedro
+#######################################
+
+CRIANDO O DIRETÓRIO DE RESULTADO PARA Pedro:
+ - Diretório Resultados/Pedro criado com sucesso!
+ - Diretório Resultados/Pedro/main criado com sucesso!
+ - Diretório Resultados/Pedro/completo criado com sucesso!
+ - Diretório Resultados/Pedro/missil criado com sucesso!
+ - Diretório Resultados/Pedro/defesa criado com sucesso!
+ - Diretório Resultados/Pedro/cidade criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/Pedro/cidade.c' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/cidade.h' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/defesa.c' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/defesa.h' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/main.c' não encontrado!
+ - Arquivo esperado 'Respostas/Pedro/missil.c' encontrado!
+ - Arquivo esperado 'Respostas/Pedro/missil.h' encontrado!
+ - Arquivos esperados enviados: Faltando!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/Pedro/main
+ - Copiando os Includes/cidade.h Includes/defesa.h Includes/missil.h do professor para a pasta Resultados/Pedro/main
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Pedro/main
+ - Removendo o main.o do professor da pasta Resultados/Pedro/main
+ - Copiando o Respostas/Pedro/main.c do aluno para a pasta Resultados/Pedro/main
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/Pedro/completo
+ - Copiando os Respostas/Pedro/cidade.c do aluno para a pasta Resultados/Pedro/completo
+ - Copiando os Respostas/Pedro/cidade.h do aluno para a pasta Resultados/Pedro/completo
+ - Copiando os Respostas/Pedro/defesa.c do aluno para a pasta Resultados/Pedro/completo
+ - Copiando os Respostas/Pedro/defesa.h do aluno para a pasta Resultados/Pedro/completo
+ - Copiando os Respostas/Pedro/main.c do aluno para a pasta Resultados/Pedro/completo
+ - Copiando os Respostas/Pedro/missil.c do aluno para a pasta Resultados/Pedro/completo
+ - Copiando os Respostas/Pedro/missil.h do aluno para a pasta Resultados/Pedro/completo
+ - Pasta missil:
+ - Copiando os Casos de teste para a pasta Resultados/Pedro/missil
+ - Copiando os Includes/cidade.h Includes/defesa.h Includes/missil.h do professor para a pasta Resultados/Pedro/missil
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Pedro/missil
+ - Removendo o missil.o do professor da pasta Resultados/Pedro/missil
+ - Copiando o Respostas/Pedro/missil.c do aluno para a pasta Resultados/Pedro/missil
+ - Pasta defesa:
+ - Copiando os Casos de teste para a pasta Resultados/Pedro/defesa
+ - Copiando os Includes/cidade.h Includes/defesa.h Includes/missil.h do professor para a pasta Resultados/Pedro/defesa
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Pedro/defesa
+ - Removendo o defesa.o do professor da pasta Resultados/Pedro/defesa
+ - Copiando o Respostas/Pedro/defesa.c do aluno para a pasta Resultados/Pedro/defesa
+ - Pasta cidade:
+ - Copiando os Casos de teste para a pasta Resultados/Pedro/cidade
+ - Copiando os Includes/cidade.h Includes/defesa.h Includes/missil.h do professor para a pasta Resultados/Pedro/cidade
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Pedro/cidade
+ - Removendo o cidade.o do professor da pasta Resultados/Pedro/cidade
+ - Copiando o Respostas/Pedro/cidade.c do aluno para a pasta Resultados/Pedro/cidade
+ - Copiando Arquivos Extras do Aluno:
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Erro de compilação! Verifique os arquivos da pasta main.
+ - Compilação dos arquivos do aluno na pasta completo ok!
+ - Arquivo de output gerado: Resultados/Pedro/completo/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta missil ok!
+ - Arquivo de output gerado: Resultados/Pedro/missil/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta defesa ok!
+ - Arquivo de output gerado: Resultados/Pedro/defesa/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta cidade ok!
+ - Arquivo de output gerado: Resultados/Pedro/cidade/result_compilation.txt
+ - Arquivos Compilados: Erro!: 1 arquivos com erros de compilacao.
+
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Pedro/main/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Pedro/completo/result_linking.txt
+ - Pasta missil:
+ - Gerando o binário prog linkando com o(s) arquivo(s) missil/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Pedro/missil/result_linking.txt
+ - Pasta defesa:
+ - Gerando o binário prog linkando com o(s) arquivo(s) defesa/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Pedro/defesa/result_linking.txt
+ - Pasta cidade:
+ - Gerando o binário prog linkando com o(s) arquivo(s) cidade/*.o
+ - Arquivos Linkados: Erro! Binário prog não gerado.
+ - Arquivo de output gerado: Resultados/Pedro/cidade/result_linking.txt
+ - Arquivos Linkados: Erro! 3 arquivos com erros de linkagem.
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta main / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta main / Caso 5:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta main (máximo 2.00) - 0 de 50 - 0% de 2.00: 0.
+ -----
+ - Pasta completo / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta completo / Caso 5:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta completo (máximo 2.00) - 0 de 50 - 0% de 2.00: 0.
+ -----
+ - Pasta missil / Caso 1:
+ - Arquivo de output gerado: Resultados/Pedro/missil/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 15, frees: 15, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta missil / Caso 2:
+ - Arquivo de output gerado: Resultados/Pedro/missil/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 19, frees: 19, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta missil / Caso 3:
+ - Arquivo de output gerado: Resultados/Pedro/missil/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 26, frees: 26, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta missil / Caso 4:
+ - Arquivo de output gerado: Resultados/Pedro/missil/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 26, frees: 26, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta missil / Caso 5:
+ - Arquivo de output gerado: Resultados/Pedro/missil/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta missil (máximo 2.00) - 50.00 de 50 - 100.00% de 2.00: 2.00.
+ -----
+ - Pasta defesa / Caso 1:
+ - Arquivo de output gerado: Resultados/Pedro/defesa/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 19, frees: 19, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta defesa / Caso 2:
+ - Arquivo de output gerado: Resultados/Pedro/defesa/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 23, frees: 23, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta defesa / Caso 3:
+ - Arquivo de output gerado: Resultados/Pedro/defesa/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 36, frees: 36, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta defesa / Caso 4:
+ - Arquivo de output gerado: Resultados/Pedro/defesa/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 36, frees: 36, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta defesa / Caso 5:
+ - Arquivo de output gerado: Resultados/Pedro/defesa/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 39, frees: 39, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta defesa (máximo 2.00) - 50.00 de 50 - 100.00% de 2.00: 2.00.
+ -----
+ - Pasta cidade / Caso 1:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta cidade / Caso 2:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta cidade / Caso 3:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta cidade / Caso 4:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Pasta cidade / Caso 5:
+ - Valgrind: Incorreto! Verifique se o binário prog foi gerado corretamente. Ou se o Valgrind está instalado.
+ - Resultado para o saida.txt: Incorreto! Peso: 0.0
+ - Nota para o Caso (soma dos pesos): 0 (soma total) - 50.0% (desconto do valgrind) = 0 de 10 pontos.
+ - Nota para a pasta cidade (máximo 2.00) - 0 de 50 - 0% de 2.00: 0.
+ -----
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Aluno: Pedro
+ - Arquivos Esperados Corretos: 6 de 7
+ - Pastas Compiladas Corretamente: 4 de 5 
+ - Pastas Linkadas Corretamente: 2 de 5
+ - Teste main
+ - Resultados corretos: 0 de 5
+ - Valgrinds corretos: 0 de 5
+ - Nota de Pedro para o teste main: 0
+ - Teste completo
+ - Resultados corretos: 0 de 5
+ - Valgrinds corretos: 0 de 5
+ - Nota de Pedro para o teste completo: 0
+ - Teste missil
+ - Resultados corretos: 5 de 5
+ - Valgrinds corretos: 5 de 5
+ - Nota de Pedro para o teste missil: 2.00
+ - Teste defesa
+ - Resultados corretos: 5 de 5
+ - Valgrinds corretos: 5 de 5
+ - Nota de Pedro para o teste defesa: 2.00
+ - Teste cidade
+ - Resultados corretos: 0 de 5
+ - Valgrinds corretos: 0 de 5
+ - Nota de Pedro para o teste cidade: 0
+ - Nota de Pedro: 0+(2.00)+(2.00)+(0)+(0)+(0)
+ - Nota de Pedro: 4.00
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+
+
