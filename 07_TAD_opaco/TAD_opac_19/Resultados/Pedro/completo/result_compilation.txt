@@ -1,3 +1,23 @@
+cidade.c: In function ‘ImprimeCidade’:
+cidade.c:87:37: warning: passing argument 1 of ‘ImprimeDefesa’ from incompatible pointer type [-Wincompatible-pointer-types]
+   87 |         ImprimeDefesa(cidade->missil[i]);
+      |                       ~~~~~~~~~~~~~~^~~
+      |                                     |
+      |                                     tMissil {aka struct missil *}
+In file included from cidade.c:4:
+defesa.h:28:28: note: expected ‘tDefesa’ {aka ‘struct defesa *’} but argument is of type ‘tMissil’ {aka ‘struct missil *’}
+   28 | void ImprimeDefesa(tDefesa defesa);
+      |                    ~~~~~~~~^~~~~~
+cidade.c: In function ‘LiberaCidade’:
+cidade.c:106:37: warning: passing argument 1 of ‘LiberaMissil’ from incompatible pointer type [-Wincompatible-pointer-types]
+  106 |         LiberaMissil(cidade->defesas[i]);
+      |                      ~~~~~~~~~~~~~~~^~~
+      |                                     |
+      |                                     tDefesa {aka struct defesa *}
+In file included from cidade.c:5:
+missil.h:33:27: note: expected ‘tMissil’ {aka ‘struct missil *’} but argument is of type ‘tDefesa’ {aka ‘struct defesa *’}
+   33 | void LiberaMissil(tMissil missil);
+      |                   ~~~~~~~~^~~~~~
 defesa.c: In function ‘VerificaSeDentroArea’:
 defesa.c:95:1: warning: control reaches end of non-void function [-Wreturn-type]
    95 | }

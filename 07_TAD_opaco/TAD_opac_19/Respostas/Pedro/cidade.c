@@ -8,11 +8,11 @@ struct cidade
     float x;
     float y;
     char nome;
-    tDefesa *defesas[QTD_DEF];
-    tMissil *missil[QTD_DEF];
+    tDefesa defesas[QTD_DEF];
+    tMissil missil[QTD_DEF];
     int qtddefesas;
     int qtdmisseis;
-    float danofeito, danorecebido;
+    float danototal, danorecebido;
 };
 /**
  * @brief Cria uma nova cidade.
@@ -30,7 +30,7 @@ tCidade CriaCidade()
     cidade->x = 0;
     cidade->y = 0;
     cidade->danorecebido = 0;
-    cidade->danofeito = 0;
+    cidade->danototal = 0;
     cidade->qtddefesas = 0;
     cidade->qtdmisseis = 0;
 
@@ -117,26 +117,28 @@ void ProcessaAtaques(tCidade cidade)
 {
     for (int i = 0; i < cidade->qtdmisseis; i++)
     {
+        cidade->danototal += GetMissilPoder(cidade->missil[i]);
         for (int j = 0; j < cidade->qtddefesas; j++)
         {
-            if (VerificaSeDentroArea(cidade->defesas[j],GetMissilX(cidade->missil[i]),GetMissilY(cidade->missil[i])))
+            if (VerificaSeDentroArea(cidade->defesas[j], GetMissilX(cidade->missil[i]), GetMissilY(cidade->missil[i])))
             {
                 if (PodeDefender(cidade->defesas[j]))
                 {
-                    if (GetDefesaPoder(cidade->defesas[j])>=GetMissilPoder(cidade->missil[i]))
+                    if (GetDefesaPoder(cidade->defesas[j]) >= GetMissilPoder(cidade->missil[i]))
                     {
-                      cidade->danorecebido+=0;
-                      cidade->danofeito
+                        cidade->danorecebido += GetMissilPoder(cidade->missil[i]);
+                        ReduzPoder(cidade->missil[i], GetMissilPoder(cidade->missil[i]));
                     }
-                    
+                    else
+                    {
+                        cidade->danorecebido += GetDefesaPoder(cidade->defesas[j]);
+                        ReduzPoder(cidade->missil[i], GetDefesaPoder(cidade->defesas[j]));
+                    }
+                    UsaDefesa(cidade->defesas[j]);
                 }
-                
             }
-            
         }
-        
     }
-    
 }
 
 /**
@@ -144,4 +146,17 @@ void ProcessaAtaques(tCidade cidade)
  *
  * @param cidade Ponteiro para a cidade que terá os dados impressos.
  */
-void ImprimeDados(tCidade cidade);
+void ImprimeDados(tCidade cidade){
+    for (int i = 0; i < cidade->qtddefesas; i++)
+    {
+        ImprimeDefesa(cidade->defesas[i]);
+    }
+    for (int i = 0; i < cidade->qtdmisseis; i++)
+    {
+        ImprimeMissil(cidade->missil[i]);
+    }
+    float eft=(cidade->danorecebido/cidade->danototal)*100;
+    printf("Efetividade: %.2f%%",eft);
+    
+    
+}
