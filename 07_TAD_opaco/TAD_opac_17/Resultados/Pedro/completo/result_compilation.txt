@@ -1,0 +1,7 @@
+computador.c: In function ‘GerenciaJogo’:
+computador.c:47:16: warning: unused variable ‘d’ [-Wunused-variable]
+   47 |     int v = 0, d = 0;
+      |                ^
+computador.c:47:9: warning: unused variable ‘v’ [-Wunused-variable]
+   47 |     int v = 0, d = 0;
+      |         ^
