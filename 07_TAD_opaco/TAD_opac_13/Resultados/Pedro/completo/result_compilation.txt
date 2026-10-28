@@ -1,0 +1,4 @@
+paciente.c: In function ‘imprimePaciente’:
+paciente.c:140:9: warning: variable ‘cont’ set but not used [-Wunused-but-set-variable]
+  140 |     int cont = 0;
+      |         ^~~~
