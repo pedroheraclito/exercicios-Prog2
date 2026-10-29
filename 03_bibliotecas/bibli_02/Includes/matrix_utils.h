@@ -1,104 +1,104 @@
-#ifndef MATRIX_UTILS_H
-#define MATRIX_UTILS_H
+#ifndef matrix_UTILS_H
+#define matrix_UTILS_H
 
 /**
  * @brief Lê os valores da matriz especificada a partir da entrada padrão.
- * @param rows Número de linhas da matriz.
- * @param cols Número de colunas da matriz.
- * @param matrix Matriz a ser preenchida.
+ * @param linhas Número de linhas da matriz.
+ * @param colunas Número de colunas da matriz.
+ * @param matriz Matriz a ser preenchida.
  */
-void matrix_read(int rows, int cols, int matrix[rows][cols]);
+void leMatriz(int linhas, int colunas, int matriz[linhas][colunas]);
 
 /**
  * @brief Imprime a matriz especificada na saída padrão.
- * @param rows Número de linhas da matriz.
- * @param cols Número de colunas da matriz.
- * @param matrix Matriz a ser impressa. Após a impressão da matriz, deve ser impressa uma quebra de linha.
+ * @param linhas Número de linhas da matriz.
+ * @param colunas Número de colunas da matriz.
+ * @param matriz Matriz a ser impressa. Após a impressão da matriz, deve ser impressa uma quebra de linha.
  */
-void matrix_print(int rows, int cols, int matrix[rows][cols]);
+void escreveMatriz(int linhas, int colunas, int matriz[linhas][colunas]);
 
 /**
  * @brief Verifica se é possível somar duas matrizes.
- * @param rows1 Número de linhas da primeira matriz.
- * @param cols1 Número de colunas da primeira matriz.
- * @param rows2 Número de linhas da segunda matriz.
- * @param cols2 Número de colunas da segunda matriz.
+ * @param linhas1 Número de linhas da primeira matriz.
+ * @param colunas1 Número de colunas da primeira matriz.
+ * @param linhas2 Número de linhas da segunda matriz.
+ * @param colunas2 Número de colunas da segunda matriz.
  * @return 1 se for possível somar as matrizes, 0 caso contrário.
  */
-int possible_matrix_sum(int rows1, int cols1, int rows2, int cols2);
+int possivelSomarMatriz(int linhas1, int colunas1, int linhas2, int colunas2);
 
 /**
  * @brief Verifica se é possível subtrair duas matrizes.
- * @param rows1 Número de linhas da primeira matriz.
- * @param cols1 Número de colunas da primeira matriz.
- * @param rows2 Número de linhas da segunda matriz.
- * @param cols2 Número de colunas da segunda matriz.
+ * @param linhas1 Número de linhas da primeira matriz.
+ * @param colunas1 Número de colunas da primeira matriz.
+ * @param linhas2 Número de linhas da segunda matriz.
+ * @param colunas2 Número de colunas da segunda matriz.
  * @return 1 se for possível subtrair as matrizes, 0 caso contrário.
  */
-int possible_matrix_sub(int rows1, int cols1, int rows2, int cols2);
+int possivelSubtrairMatriz(int linhas1, int colunas1, int linhas2, int colunas2);
 
 /**
  * @brief Verifica se é possível multiplicar duas matrizes.
- * @param cols1 Número de colunas da primeira matriz.
- * @param rows2 Número de linhas da segunda matriz.
+ * @param colunas1 Número de colunas da primeira matriz.
+ * @param linhas2 Número de linhas da segunda matriz.
  * @return 1 se for possível multiplicar as matrizes, 0 caso contrário.
  */
-int possible_matrix_multiply(int cols1, int rows2);
+int possivelMultiplicarMatriz(int colunas1, int linhas2);
 
 /**
- * @brief Soma duas matrizes e armazena o resultado em result. Não é feito teste de possibilidade de soma.
- * @param rows1 Número de linhas da primeira matriz.
- * @param cols1 Número de colunas da primeira matriz.
- * @param matrix1 Primeira matriz.
- * @param rows2 Número de linhas da segunda matriz.
- * @param cols2 Número de colunas da segunda matriz.
- * @param matrix2 Segunda matriz.
- * @param result Matriz que armazenará o resultado da soma.
+ * @brief Soma duas matrizes e armazena o resultado em resultado. Não é feito teste de possibilidade de soma.
+ * @param linhas1 Número de linhas da primeira matriz.
+ * @param colunas1 Número de colunas da primeira matriz.
+ * @param matriz1 Primeira matriz.
+ * @param linhas2 Número de linhas da segunda matriz.
+ * @param colunas2 Número de colunas da segunda matriz.
+ * @param matriz2 Segunda matriz.
+ * @param resultado Matriz que armazenará o resultado da soma.
  */
-void matrix_add(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int cols2, int matrix2[rows2][cols2], int result[rows1][cols1]);
+void somaMatriz(int linhas1, int colunas1, int matriz1[linhas1][colunas1], int linhas2, int colunas2, int matriz2[linhas2][colunas2], int resultado[linhas1][colunas1]);
 
 /**
- * @brief Subtrai duas matrizes e armazena o resultado em result. Não é feito teste de verificação de subtração.
- * @param rows1 Número de linhas da primeira matriz.
- * @param cols1 Número de colunas da primeira matriz.
- * @param matrix1 Primeira matriz.
- * @param rows2 Número de linhas da segunda matriz.
- * @param cols2 Número de colunas da segunda matriz.
- * @param matrix2 Segunda matriz.
- * @param result Matriz que armazenará o resultado da subtração.
+ * @brief Subtrai duas matrizes e armazena o resultado em resultado. Não é feito teste de verificação de subtração.
+ * @param linhas1 Número de linhas da primeira matriz.
+ * @param colunas1 Número de colunas da primeira matriz.
+ * @param matriz1 Primeira matriz.
+ * @param linhas2 Número de linhas da segunda matriz.
+ * @param colunas2 Número de colunas da segunda matriz.
+ * @param matriz2 Segunda matriz.
+ * @param resultado Matriz que armazenará o resultado da subtração.
  */
-void matrix_sub(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int cols2, int matrix2[rows2][cols2], int result[rows1][cols1]);
+void subtraiMatriz(int linhas1, int colunas1, int matriz1[linhas1][colunas1], int linhas2, int colunas2, int matriz2[linhas2][colunas2], int resultado[linhas1][colunas1]);
 
 /**
- * @brief Multiplica duas matrizes e armazena o resultado em result. Não é feito teste de verificação para a multiplicação. 
- *  A matriz result deve ser inicializada com 0 dentro desta função.
- * @param rows1 Número de linhas da primeira matriz.
- * @param cols1 Número de colunas da primeira matriz.
- * @param matrix1 Primeira matriz.
- * @param rows2 Número de linhas da segunda matriz.
- * @param cols2 Número de colunas da segunda matriz.
- * @param matrix2 Segunda matriz.
- * @param result Matriz que armazenará o resultado da multiplicação.
+ * @brief Multiplica duas matrizes e armazena o resultado em resultado. Não é feito teste de verificação para a multiplicação. 
+ *  A matriz resultado deve ser inicializada com 0 dentro desta função.
+ * @param linhas1 Número de linhas da primeira matriz.
+ * @param colunas1 Número de colunas da primeira matriz.
+ * @param matriz1 Primeira matriz.
+ * @param linhas2 Número de linhas da segunda matriz.
+ * @param colunas2 Número de colunas da segunda matriz.
+ * @param matriz2 Segunda matriz.
+ * @param resultado Matriz que armazenará o resultado da multiplicação.
  */
-void matrix_multiply(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int cols2, int matrix2[rows2][cols2], int result[rows1][cols2]);
+void multiplicaMatriz(int linhas1, int colunas1, int matriz1[linhas1][colunas1], int linhas2, int colunas2, int matriz2[linhas2][colunas2], int resultado[linhas1][colunas2]);
 
 /**
  * @brief Transpõe a matriz especificada. O resultado da transposta deve ser armazenado em result.
- * @param rows Número de linhas da matriz.
- * @param cols Número de colunas da matriz.
- * @param matrix Matriz a ser transposta.
- * @param result Matriz que armazenará o resultado da transposição.
+ * @param linhas Número de linhas da matriz.
+ * @param colunas Número de colunas da matriz.
+ * @param matriz Matriz a ser transposta.
+ * @param resultado Matriz que armazenará o resultado da transposição.
  */
-void transpose_matrix(int rows, int cols, int matrix[rows][cols], int result[cols][rows]);
+void tranporMatriz(int linhas, int colunas, int matriz[linhas][colunas], int resultado[colunas][linhas]);
 
 /**
  * @brief Multiplica a matriz especificada por um escalar, mantendo o resultado na própria matriz.
- * @param rows Número de linhas da matriz.
- * @param cols Número de colunas da matriz.
- * @param matrix Matriz a ser multiplicada.
- * @param scalar Escalar a ser multiplicado.
+ * @param linhas Número de linhas da matriz.
+ * @param colunas Número de colunas da matriz.
+ * @param matriz Matriz a ser multiplicada.
+ * @param escalar Escalar a ser multiplicado.
  */
-void scalar_multiply(int rows, int cols, int matrix[rows][cols], int scalar);
+void multiplicaEscalarMatriz(int linhas, int colunas, int matriz[linhas][colunas], int escalar);
 
 
 #endif

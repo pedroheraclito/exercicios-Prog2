@@ -2,53 +2,46 @@
 #define _temperature_conversor
 
 /**
- * @brief Converte uma temperatura em Celsius para Kelvin.
- * @param temperature A temperatura em Celsius.
+ * @brief converte uma temperatura em Celsius para Kelvin.
+ * @param temperatura A temperatura em Celsius.
  * @return A temperatura em Kelvin.
  */
-float convert_celsius_to_kelvin(float temperature);
+float converte_celsius_para_kelvin(float temperatura);
 
 /**
- * @brief Converte uma temperatura em Celsius para Fahrenheit.
- * @param temperature A temperatura em Celsius.
+ * @brief converte uma temperatura em Celsius para Fahrenheit.
+ * @param temperatura A temperatura em Celsius.
  * @return A temperatura em Fahrenheit.
  */
-float convert_celsius_to_fahrenheit(float temperature);
+float converte_celsius_para_fahrenheit(float temperatura);
 
 /**
- * @brief Converte uma temperatura em Kelvin para Celsius.
- * @param temperature A temperatura em Kelvin.
+ * @brief converte uma temperatura em Kelvin para Celsius.
+ * @param temperatura A temperatura em Kelvin.
  * @return A temperatura em Celsius.
  */
-float convert_kelvin_to_celsius(float temperature);
+float converte_kelvin_para_celsius(float temperatura);
 
 /**
- * @brief Converte uma temperatura em Kelvin para Fahrenheit.
- * @param temperature A temperatura em Kelvin.
+ * @brief converte uma temperatura em Kelvin para Fahrenheit.
+ * @param temperatura A temperatura em Kelvin.
  * @return A temperatura em Fahrenheit.
  */
-float convert_kelvin_to_fahrenheit(float temperature);
+float converte_kelvin_para_fahrenheit(float temperatura);
 
 /**
- * @brief Converte uma temperatura em Fahrenheit para Celsius.
- * @param temperature A temperatura em Fahrenheit.
+ * @brief converte uma temperatura em Fahrenheit para Celsius.
+ * @param temperatura A temperatura em Fahrenheit.
  * @return A temperatura em Celsius.
  */
-float convert_fahrenheit_to_celsius(float temperature);
+float converte_fahrenheit_para_celsius(float temperatura);
 
 /**
- * @brief Converte uma temperatura em Fahrenheit para Kelvin.
- * @param temperature A temperatura em Fahrenheit.
+ * @brief converte uma temperatura em Fahrenheit para Kelvin.
+ * @param temperatura A temperatura em Fahrenheit.
  * @return A temperatura em Kelvin.
  */
-float convert_fahrenheit_to_kelvin(float temperature);
+float converte_fahrenheit_para_kelvin(float temperatura);
 
-/**
- * @brief Converte uma temperatura usando uma função de conversão dada.
- * @param temperature A temperatura a ser convertida.
- * @param convert_func A função de conversão a ser usada.
- * @return A temperatura convertida.
- */
-float convert_temperature(float temperature, float convert_func(float temperature));
 
 #endif

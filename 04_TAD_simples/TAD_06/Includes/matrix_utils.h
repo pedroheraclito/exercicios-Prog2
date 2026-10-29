@@ -1,96 +1,96 @@
 #ifndef MATRIX_UTILS_H
 #define MATRIX_UTILS_H
 
-#define MAX_MATRIX_SIZE 10
+#define MAX_MATRIZ_SIZE 10
 
-typedef struct Matrix{
-    int rows;
-    int cols;
-    int data[MAX_MATRIX_SIZE][MAX_MATRIX_SIZE];
-} tMatrix;
+typedef struct Matriz{
+    int linhas;
+    int colunas;
+    int data[MAX_MATRIZ_SIZE][MAX_MATRIZ_SIZE];
+} tMatriz;
 
 /**
  * @brief Cria uma matriz com o número de linhas e colunas especificado.
- * @param rows O número de linhas na matriz.
- * @param cols O número de colunas na matriz.
+ * @param linhas O número de linhas na matriz.
+ * @param colunas O número de colunas na matriz.
  * @return A matriz criada.
  */
-tMatrix MatrixCreate(int rows, int cols);
+tMatriz criaMatriz(int linhas, int colunas);
 
 /**
  * @brief Lê uma matriz da entrada padrão.
- * @param matrix A matriz a ser lida.
+ * @param Matriz A matriz a ser lida.
  * @return A matriz lida.
  */
-tMatrix MatrixRead(tMatrix matrix);
+tMatriz leMatriz(tMatriz Matriz);
 
 /**
  * @brief Imprime uma matriz na saída padrão.
- * @param matrix A matriz a ser impressa.
+ * @param Matriz A matriz a ser impressa.
  */
-void MatrixPrint(tMatrix matrix);
+void escreveMatriz(tMatriz Matriz);
 
 /**
  * @brief Verifica se é possível somar duas matrizes.
- * @param matrix1 A primeira matriz.
- * @param matrix2 A segunda matriz.
+ * @param Matriz1 A primeira matriz.
+ * @param Matriz2 A segunda matriz.
  * @return 1 se for possível somar as matrizes, 0 caso contrário.
  */
-int PossibleMatrixSum(tMatrix matrix1, tMatrix matrix2);
+int possivelSomarMatriz(tMatriz Matriz1, tMatriz Matriz2);
 
 /**
  * @brief Verifica se é possível subtrair duas matrizes.
- * @param matrix1 A primeira matriz.
- * @param matrix2 A segunda matriz.
+ * @param Matriz1 A primeira matriz.
+ * @param Matriz2 A segunda matriz.
  * @return 1 se for possível subtrair as matrizes, 0 caso contrário.
  */
-int PossibleMatrixSub(tMatrix matrix1, tMatrix matrix2);
+int possivelSubtrairMatriz(tMatriz Matriz1, tMatriz Matriz2);
 
 /**
  * @brief Verifica se é possível multiplicar duas matrizes.
- * @param matrix1 A primeira matriz.
- * @param matrix2 A segunda matriz.
+ * @param Matriz1 A primeira matriz.
+ * @param Matriz2 A segunda matriz.
  * @return 1 se for possível multiplicar as matrizes, 0 caso contrário.
  */
-int PossibleMatrixMultiply(tMatrix matrix1, tMatrix matrix2);
+int possivelMultiplicarMatriz(tMatriz Matriz1, tMatriz Matriz2);
 
 /**
  * @brief Soma duas matrizes.
- * @param matrix1 A primeira matriz.
- * @param matrix2 A segunda matriz.
+ * @param Matriz1 A primeira matriz.
+ * @param Matriz2 A segunda matriz.
  * @return O resultado da soma.
  */
-tMatrix MatrixAdd(tMatrix matrix1, tMatrix matrix2);
+tMatriz somaMatriz(tMatriz Matriz1, tMatriz Matriz2);
 
 /**
  * @brief Subtrai duas matrizes.
- * @param matrix1 A primeira matriz.
- * @param matrix2 A segunda matriz.
+ * @param Matriz1 A primeira matriz.
+ * @param Matriz2 A segunda matriz.
  * @return O resultado da subtração.
  */
-tMatrix MatrixSub(tMatrix matrix1, tMatrix matrix2);
+tMatriz subtraiMatriz(tMatriz Matriz1, tMatriz Matriz2);
 
 /**
  * @brief Multiplica duas matrizes.
- * @param matrix1 A primeira matriz.
- * @param matrix2 A segunda matriz.
+ * @param Matriz1 A primeira matriz.
+ * @param Matriz2 A segunda matriz.
  * @return O resultado da multiplicação.
  */
-tMatrix MatrixMultiply(tMatrix matrix1, tMatrix matrix2);
+tMatriz multiplicaMatriz(tMatriz Matriz1, tMatriz Matriz2);
 
 /**
  * @brief Transpõe uma matriz.
- * @param matrix A matriz a ser transposta.
+ * @param Matriz A matriz a ser transposta.
  * @return A matriz transposta.
  */
-tMatrix TransposeMatrix(tMatrix matrix);
+tMatriz transporMatriz(tMatriz Matriz);
 
 /**
  * @brief Multiplica uma matriz por um escalar.
- * @param matrix A matriz a ser multiplicada.
- * @param scalar O escalar pelo qual a matriz será multiplicada.
+ * @param Matriz A matriz a ser multiplicada.
+ * @param escalar O escalar pelo qual a matriz será multiplicada.
  * @return O resultado da multiplicação.
  */
-tMatrix MatrixMultiplyByScalar(tMatrix matrix, int scalar);
+tMatriz multiplicaEscalarMatriz(tMatriz Matriz, int escalar);
 
 #endif

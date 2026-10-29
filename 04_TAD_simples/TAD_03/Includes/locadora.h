@@ -48,7 +48,7 @@ tLocadora lerCadastroLocadora (tLocadora locadora);
  * @param quantidadeCodigos Quantidade de códigos no array.
  * @return Locadora atualizada.
  */
-tLocadora alugarFilmesLocadora (tLocadora locadora, int* codigos, int quantidadeCodigos);
+tLocadora alugarFilmesLocadora (tLocadora locadora, int codigos[], int quantidadeCodigos);
 
 /**
  * @brief Lê o aluguel de um conjunto de filmes a partir da entrada padrão e os aluga na locadora.
@@ -64,7 +64,7 @@ tLocadora lerAluguelLocadora (tLocadora locadora);
  * @param quantidadeCodigos Quantidade de códigos no array.
  * @return Locadora atualizada.
  */
-tLocadora devolverFilmesLocadora (tLocadora locadora, int* codigos, int quantidadeCodigos);
+tLocadora devolverFilmesLocadora (tLocadora locadora, int codigos[], int quantidadeCodigos);
 
 /**
  * @brief Lê a devolução de um conjunto de filmes a partir da entrada padrão e os devolve na locadora.
