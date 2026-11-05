@@ -90,14 +90,14 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  -----
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/Pedro/completo/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 8, frees: 8, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 14, frees: 14, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Nota para a pasta completo (máximo 2.50) - 10.00 de 10 - 100.00% de 2.50: 2.50.
  -----
  - Pasta loja / Caso 1:
  - Arquivo de output gerado: Resultados/Pedro/loja/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 12, frees: 12, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 18, frees: 18, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Ok! Peso: 10
  - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
  - Nota para a pasta loja (máximo 2.50) - 10.00 de 10 - 100.00% de 2.50: 2.50.

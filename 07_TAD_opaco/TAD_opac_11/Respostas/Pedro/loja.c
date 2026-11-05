@@ -7,7 +7,7 @@
 struct Loja{
     int id;
     float aluguel;
-    tVendedor *vendedor[20];
+    tVendedor **vendedor;
     float lucro;
     int totalpessoas;
 };
@@ -25,6 +25,7 @@ tLoja* AbreLoja(int id, float aluguel){
         printf("ERRO");
         exit(1);
     }
+    loja->vendedor=calloc(1,sizeof(tVendedor*));
     loja->id=id;
     loja->aluguel=aluguel;
     loja->lucro=0;
@@ -43,6 +44,7 @@ void ApagaLoja(tLoja* loja){
     {
         ApagaVendedor(loja->vendedor[i]);
     }
+    free(loja->vendedor);
     free(loja);
 }
 
@@ -69,6 +71,7 @@ int VerificaIdLoja(tLoja* loja, int id){
  * @return tLoja Retorna a estrutura do tipo tLoja atualizada com o novo vendedor contratado.
  */
 void ContrataVendedor(tLoja* loja, tVendedor* vendedor){
+    loja->vendedor=realloc(loja->vendedor,(loja->totalpessoas+1)*sizeof(tVendedor*));
     loja->vendedor[loja->totalpessoas]=vendedor;
     loja->totalpessoas++;
 }
