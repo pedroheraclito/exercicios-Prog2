@@ -1,0 +1,4 @@
+aluno.c: In function ‘DestroiAluno’:
+aluno.c:28:15: warning: initialization of ‘tAluno *’ {aka ‘struct Aluno *’} from incompatible pointer type ‘void **’ [-Wincompatible-pointer-types]
+   28 |     tAluno*al=(data_type*)aluno;
+      |               ^
