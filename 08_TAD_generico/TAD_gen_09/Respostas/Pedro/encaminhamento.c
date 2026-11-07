@@ -32,6 +32,7 @@ encaminho *criaencaminho(char *nomeMedico, char *nomePaciente, char *especialida
     strcpy(r->nomeMedico, nomeMedico);
     strcpy(r->especialidade, especialidade);
     strcpy(r->nomePaciente, nomePaciente);
+    return r;
 }
 
 /*
@@ -44,9 +45,9 @@ encaminho *leencaminho()
     char nomePaciente[MAX_nome];
     char especialidade[MAX_nome];
     char motivo[MAX_inst];
-    scanf(" %[^\n]\n", especialidade);
-    scanf(" %[^\n]\n", nomePaciente);
     scanf(" %[^\n]\n", nomeMedico);
+    scanf(" %[^\n]\n", nomePaciente);
+    scanf(" %[^\n]\n", especialidade);
     scanf(" %[^\n]\n", motivo);
     encaminho *r = criaencaminho(nomeMedico, nomePaciente, especialidade, motivo);
 
@@ -84,7 +85,7 @@ void imprimeencaminho(void *dado)
     printf("ESPECIALIDADE: %s\n", r->especialidade);
     printf("MOTIVO: %s\n", r->motivo);
     printf("MEDICO: %s\n", r->nomeMedico);
-    printf("- - - - - - - -\n");
+    printf(" - - - - - - - - - - - -\n");
 }
 
 /*

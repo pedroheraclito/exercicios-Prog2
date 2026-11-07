@@ -1,0 +1,6 @@
+==46555== Memcheck, a memory error detector
+==46555== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==46555== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==46555== Command: Resultados/Pedro/main/prog Resultados/Pedro/main/Casos/5
+==46555== Parent PID: 46554
+==46555== 

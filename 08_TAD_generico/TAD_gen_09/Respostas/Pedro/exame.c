@@ -40,10 +40,10 @@ exame *leexame()
     char nomeMedico[MAX_nome];
     char nomePaciente[MAX_nome];
     char descricao[MAX_nome];
-    scanf(" %[^\n]\n", nomePaciente);
     scanf(" %[^\n]\n", nomeMedico);
+    scanf(" %[^\n]\n", nomePaciente);
     scanf(" %[^\n]\n", descricao);
-    exame *r = criaencaminhonomeMedico(nomeMedico, nomePaciente, descricao);
+    exame *r = criaexame(nomeMedico, nomePaciente, descricao);
 
     return r;
 }
@@ -77,7 +77,7 @@ void imprimeexame(void *dado)
     printf("PACIENTE: %s\n", r->nomePaciente);
     printf("SOLICITACAO: %s\n", r->descricao);
     printf("MEDICO: %s\n", r->nomeMedico);
-    printf("- - - - - - - -\n");
+    printf("- - - - - - -\n");
 }
 
 /*
