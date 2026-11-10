@@ -1,0 +1,15 @@
+==81379== Memcheck, a memory error detector
+==81379== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==81379== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==81379== Command: Resultados/Pedro/movel/prog Resultados/Pedro/movel/Casos/1
+==81379== Parent PID: 81378
+==81379== 
+==81379== 
+==81379== HEAP SUMMARY:
+==81379==     in use at exit: 0 bytes in 0 blocks
+==81379==   total heap usage: 7 allocs, 7 frees, 8,396 bytes allocated
+==81379== 
+==81379== All heap blocks were freed -- no leaks are possible
+==81379== 
+==81379== For lists of detected and suppressed errors, rerun with: -s
+==81379== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
