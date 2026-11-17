@@ -1,0 +1,15 @@
+==30021== Memcheck, a memory error detector
+==30021== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==30021== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==30021== Command: Resultados/Pedro/main/prog Resultados/Pedro/main/Casos/1
+==30021== Parent PID: 30020
+==30021== 
+==30021== 
+==30021== HEAP SUMMARY:
+==30021==     in use at exit: 0 bytes in 0 blocks
+==30021==   total heap usage: 8 allocs, 8 frees, 8,512 bytes allocated
+==30021== 
+==30021== All heap blocks were freed -- no leaks are possible
+==30021== 
+==30021== For lists of detected and suppressed errors, rerun with: -s
+==30021== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

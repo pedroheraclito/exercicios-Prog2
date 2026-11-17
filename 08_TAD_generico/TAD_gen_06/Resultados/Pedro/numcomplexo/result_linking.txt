@@ -1,0 +1,24 @@
+/usr/bin/ld: Resultados/Pedro/numcomplexo/main.o: in function `converte_inteiro_complexo':
+main.c:(.text+0x27): undefined reference to `CriaNumComplexo'
+/usr/bin/ld: Resultados/Pedro/numcomplexo/main.o: in function `converte_float_complexo':
+main.c:(.text+0x5c): undefined reference to `CriaNumComplexo'
+/usr/bin/ld: Resultados/Pedro/numcomplexo/main.o: in function `converte_double_complexo':
+main.c:(.text+0x93): undefined reference to `CriaNumComplexo'
+/usr/bin/ld: Resultados/Pedro/numcomplexo/main.o: in function `converte_char_complexo':
+main.c:(.text+0xdf): undefined reference to `CriaNumComplexo'
+/usr/bin/ld: Resultados/Pedro/numcomplexo/main.o: in function `imprime_complexo':
+main.c:(.text+0x10d): undefined reference to `ImprimeNumeroComplexo'
+/usr/bin/ld: Resultados/Pedro/numcomplexo/main.o: in function `mult_cplx':
+main.c:(.text+0x207): undefined reference to `MultComplexos'
+/usr/bin/ld: Resultados/Pedro/numcomplexo/main.o: in function `soma_cplx':
+main.c:(.text+0x230): undefined reference to `SomaComplexos'
+/usr/bin/ld: Resultados/Pedro/numcomplexo/main.o: in function `main':
+main.c:(.text+0x2fe): undefined reference to `RetornaNumBytesComplexo'
+/usr/bin/ld: main.c:(.text+0x418): undefined reference to `CriaNumComplexo'
+/usr/bin/ld: main.c:(.text+0x43e): undefined reference to `DestroiNumeroComplexo'
+/usr/bin/ld: main.c:(.text+0x5d8): undefined reference to `RetornaNumBytesComplexo'
+/usr/bin/ld: main.c:(.text+0x60a): undefined reference to `RetornaNumBytesComplexo'
+/usr/bin/ld: main.c:(.text+0x639): undefined reference to `RetornaNumBytesComplexo'
+/usr/bin/ld: main.c:(.text+0x667): undefined reference to `RetornaNumBytesComplexo'
+/usr/bin/ld: main.c:(.text+0x6d1): undefined reference to `RetornaNumBytesComplexo'
+collect2: error: ld returned 1 exit status

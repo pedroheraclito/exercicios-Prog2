@@ -1,0 +1,21 @@
+Arquivos Esperados Corretos: 4 de 5
+Pastas Compiladas Corretamente: 3 de 4 
+Pastas Linkadas Corretamente: 1 de 4
+Teste main
+  - Resultados corretos: 0 de 9
+  - Valgrinds corretos: 0 de 9
+Nota de Pedro para o teste main: 0
+Teste completo
+  - Resultados corretos: 0 de 9
+  - Valgrinds corretos: 0 de 9
+Nota de Pedro para o teste completo: 0
+Teste matrizgenerica
+  - Resultados corretos: 9 de 9
+  - Valgrinds corretos: 9 de 9
+Nota de Pedro para o teste matrizgenerica: 2.50
+Teste numcomplexo
+  - Resultados corretos: 0 de 9
+  - Valgrinds corretos: 0 de 9
+Nota de Pedro para o teste numcomplexo: 0
+Nota de Pedro: 0+(0)+(2.50)+(0)+(0)
+Nota de Pedro: 2.50
